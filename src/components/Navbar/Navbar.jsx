@@ -10,7 +10,6 @@ function Navbar() {
   return (
     <div id='navbar' className='navbar'>
       <img className='logo' src={logo} alt="" />
-      <img src={menu_open} alt="" />
       <ul className='nav-menu'>
         <li><AnchorLink className='anchor-link' offset={50} href='#home'><p className='menu-item' onClick={() => setMenu("home")} >HomePage</p></AnchorLink></li>
         <li><AnchorLink className='anchor-link' offset={50} href='#about'><p className='menu-item' onClick={() => setMenu("about")}>About Me</p></AnchorLink></li>
