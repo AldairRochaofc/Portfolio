@@ -10,13 +10,6 @@ const Footer = () => {
                 <img className='icon-logo' src={footer_logo} alt="" />
                 <p>Lorem ipsum dolor sit amitiis pariatur exercitationem velit asperiores impedit. Numquam cum eaque labore!</p>
             </div>
-            <div className="footer-top-right">
-                <div className="footer-email-input">
-                    <img className='icon' src={user_icon} alt="" />
-                    <input type="email" placeholder='Digite o seu Email' name="E-mail"  />
-                </div>
-                <div className="footer-subscribe">Subscribe</div>
-            </div>
         </div>
         <hr />
         <div className="footer-bottom">

@@ -15,9 +15,7 @@
     justify-content: space-around;
     height: 250px;   
 }
-.footer-top-left  {
-    
-}
+
 .footer-top-left p {
     font-size: 16px;
     max-width: 400px;
@@ -69,4 +67,28 @@ border: 2px solid white;
 .footer-subscribe:hover{
     transform: scale(1.1);
     transition: 0.3s;
+}
+@media(max-width:768px){
+    .footer{
+        margin: 50px 70px;
+       
+    }
+    .footer-top{
+        flex-direction: row;
+        margin-left: 100px;
+       gap: 10px;
+       overflow-y: hidden;
+       margin-bottom: 10px;
+    }
+    .footer-bottom{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 50px;
+    }
+    .footer-bottom-right{
+        margin-left: 120px;
+    }
+    .footer-bottom-left{
+        margin-left: 200px;
+    }
 }

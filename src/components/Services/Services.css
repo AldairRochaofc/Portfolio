@@ -65,4 +65,31 @@
 .arrow-icon{
     height: 30px;
 }
+@media (max-width:768px){
+   
+    .services{
+        align-items: center;
+        gap: 30px;
+        margin: 20px 70px;
+    }
+    .services h1 {
+        padding: 0;
+        font-size: 50px;
 
+    }
+    .services-format{
+        gap: 40px;             
+    }
+    .services-format h2{
+        font-size: 28px;
+    }
+    .services-format p{
+        font-size: 18px;
+        line-height: 32px;
+        max-width: 300px;
+    }
+    .services-container{
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
