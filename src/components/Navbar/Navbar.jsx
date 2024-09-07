@@ -8,7 +8,7 @@ import menu_close from '../../assets/menu_close.svg'
 
 function Navbar() {
   const [menu, setMenu] = useState("portfolio");
-  const menuRef = useRef(null); // Correção: Não destruturar o useRef
+  const menuRef = useRef(null);
 
   const openMenu = () => {
     menuRef.current.style.right = "0";
@@ -24,13 +24,13 @@ function Navbar() {
       <img className='nav-mob-open' src={menu_open} onClick={openMenu} alt="" />
       <ul ref={menuRef} className='nav-menu'>
         <img src={menu_close} onClick={closeMenu} alt="" className="nav-mob-close" />
-        <li><AnchorLink className='anchor-link' offset={50} href='#home'><p className='menu-item' onClick={() => setMenu("home")} >HomePage</p></AnchorLink></li>
-        <li><AnchorLink className='anchor-link' offset={50} href='#about'><p className='menu-item' onClick={() => setMenu("about")}>About Me</p></AnchorLink></li>
-        <li><AnchorLink className='anchor-link' offset={50} href='#services'><p className='menu-item' onClick={() => setMenu("services")}>Services</p></AnchorLink></li>
-        <li><AnchorLink className='anchor-link' offset={50} href='#work'><p className='menu-item' onClick={() => setMenu("portfolio")}>Portifolio</p></AnchorLink></li>
-        <li><AnchorLink className='anchor-link' offset={50} href='#contact'><p className='menu-item' onClick={() => setMenu("contact")}>Contact</p></AnchorLink></li>
+        <li><AnchorLink className='anchor-link' offset={50} href='#home'><p className='menu-item' onClick={() => setMenu("home")} >Inicial</p></AnchorLink></li>
+        <li><AnchorLink className='anchor-link' offset={50} href='#about'><p className='menu-item' onClick={() => setMenu("about")}>Sobre mim</p></AnchorLink></li>
+        <li><AnchorLink className='anchor-link' offset={50} href='#services'><p className='menu-item' onClick={() => setMenu("services")}>Serviços</p></AnchorLink></li>
+        <li><AnchorLink className='anchor-link' offset={50} href='#work'><p className='menu-item' onClick={() => setMenu("portfolio")}>Portfólio</p></AnchorLink></li>
+        <li><AnchorLink className='anchor-link' offset={50} href='#contact'><p className='menu-item' onClick={() => setMenu("contact")}>Contatos</p></AnchorLink></li>
       </ul>
-      <div className="nav-connect"><AnchorLink className='anchor-link' offset={50} href='#contact'>Connect With Me</AnchorLink></div>
+      <div className="nav-connect"><AnchorLink className='anchor-link' offset={50} href='#contact'>Fale comigo</AnchorLink></div>
     </div>
   );
 }

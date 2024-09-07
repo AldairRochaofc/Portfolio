@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div id='about' className='about'>
         <div className="about-tittle">
-            <h1>About Me</h1>
+            <h1>Sobre mim</h1>
         </div>
         <div className='about-sections'>
             <div className="about-left">
@@ -15,12 +15,12 @@ const About = () => {
             </div>
             <div className="about-right">
                 <div className="about-para">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem hic vero repudiandae dignissimos totam eius magnam iste quis laborum iusto nostrum, eaque minus in aspernatur pariatur aut adipisci enim error?</p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque quam deserunt commodi provident. Natus rem rerum laborum, et quo fuga, inventore repudiandae illo similique amet ipsum sed, eaque cumque quod!</p>
+                    <p>Sou Aldair Santos Rocha, desenvolvedor front-end apaixonado por criar interfaces modernas e funcionais. Com um olhar atento para detalhes, busco sempre oferecer uma experiência de usuário intuitiva e agradável. Meu trabalho envolve transformar ideias em realidade digital, combinando criatividade com as mais recentes tecnologias e boas práticas de desenvolvimento. </p>
+                    <p>Atualmente, estou cursando Engenharia de Software, o que me permite aplicar conhecimentos teóricos em projetos práticos. Meu foco é continuar evoluindo no desenvolvimento web, aprimorando minhas habilidades em HTML, CSS, JavaScript, ReactJS e outros frameworks.</p>
                 </div>
                 <div className="about-skills">
-                    <div className="about-skill"><p>HTML & CSS</p> <hr style={{width:"50%"}}/></div>
-                    <div className="about-skill"><p>React JS</p> <hr style={{width:"70%"}}/></div>
+                    <div className="about-skill"><p>HTML & CSS</p> <hr style={{width:"100%"}}/></div>
+                    <div className="about-skill"><p>React JS</p> <hr style={{width:"60%"}}/></div>
                     <div className="about-skill"><p>JavaScript</p> <hr style={{width:"60%"}}/></div>
                     <div className="about-skill"><p>Next JS</p> <hr style={{width:"50%"}}/></div>
                 </div>
@@ -28,18 +28,18 @@ const About = () => {
         </div>
         <div className="about-achievements">
         <div className="about-achievement">
-            <h1>2+ Years</h1>
-            <p>YEARS OF EXPERIENCES</p>
+            <h1> 1 + ANO </h1>
+            <p> UM ANO DE EXPERIÊNCIA</p>
         </div>
         <hr />
         <div className="about-achievement">
-            <h1>10+</h1>
-            <p>PROJECTS COMPLETE</p>
+            <h1>5+</h1>
+            <p>PROJETOS COMPLETOS</p>
         </div>
         <hr />
         <div className="about-achievement">
-            <h1>15</h1>
-            <p>HAPPY CLIENTS</p>
+            <h1>10</h1>
+            <p>CLIENTES FELIZES</p>
         </div>
         </div>
 

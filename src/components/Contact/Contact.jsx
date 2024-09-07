@@ -34,13 +34,13 @@ export const Contact = () => {
     return (
         <div id='contact' className='contact'>
             <div className="contact-tittle">
-                <h1>Get in touch</h1>
+                <h1>Entre em Contato</h1>
                 <img src="#" alt="" />
             </div>
             <div className="contact-section">
                 <div className="contact-left">
-                    <h1>Lets Talk</h1>
-                    <p className='content-p'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quas hic facere, commodi ratione sequi nemo eveniet provident dolorem! Sunt autem consectetur qui dignissimos, veniam iusto at. Rerum, placeat error!</p>
+                    <h1>Vamos conversar</h1>
+                    <p className='content-p'>Tem uma ideia, projeto ou pergunta? Estou aqui para ajudar! Entre em contato e vamos trabalhar juntos para transformar suas ideias em soluções digitais. Estou à disposição para colaborar e encontrar a melhor forma de realizar seus objetivos. Vamos conversar!</p>
                     <div className="contact-details">
                         <div className="contact-detail">
                             <img className='icons' src={mail_icon} alt=""/> <p>aldairmurilo000@gmail.com</p>
@@ -54,7 +54,7 @@ export const Contact = () => {
                     </div>
                 </div>
                 <form onSubmit={onSubmit} className="contact-right">
-                    <label htmlFor="">Your Name</label>
+                    <label htmlFor="">Seu Nome</label>
                     <input type="text" placeholder='Digite seu nome' name="Nome"required />
                     <label htmlFor="">Seu E-mail</label>
                     <input type="email" placeholder='Digite seu E-mail' name="Email"required />

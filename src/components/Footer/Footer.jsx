@@ -8,8 +8,9 @@ const Footer = () => {
         <div className="footer-top">
             <div className="footer-top-left">
                 <img className='icon-logo' src={footer_logo} alt="" />
-                <p>Lorem ipsum dolor sit amitiis pariatur exercitationem velit asperiores impedit. Numquam cum eaque labore!</p>
+                <p>Obrigado por visitar meu portfólio!</p>
             </div>
+            <div></div>
         </div>
         <hr />
         <div className="footer-bottom">

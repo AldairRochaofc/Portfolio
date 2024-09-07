@@ -7,7 +7,7 @@ export const MyWork = () => {
   return (
    <div id='work' className='mywork'>
      <div className="mywork-tittle">
-        <h1>my Latest work</h1>
+        <h1>Ultimos Trabalhos</h1>
      </div>
      <div className="mywork-container">
         {mywork_data.map((work,index)=> {
@@ -15,8 +15,8 @@ export const MyWork = () => {
         })}
      </div>
      <div className="mywork-showmore">
-        <p>Show More </p>
-        <img className='arrow-icon' src={arrow_icon} alt="" />
+        <p>Ver Mais</p>
+        <img className='arrow-icon' src={arrow_icon} alt=""/>
      </div>
    </div>
   )

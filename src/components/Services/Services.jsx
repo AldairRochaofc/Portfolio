@@ -7,7 +7,7 @@ const Services = () => {
   return (
     <div id='services' className='services'>
       <div className="services-tittle">
-        <h1>My Services</h1>
+        <h1>Meus Cursos</h1>
         <img src="#" alt="" />
       </div>
       <div className="services-container">
@@ -17,7 +17,7 @@ const Services = () => {
             <h2>{services.s_name}</h2>
             <p>{services.s_desc}</p>
             <div className="services-readmore">
-              <p>Digiar mais coisa</p>
+              <p><a className='link-cert' href="">Certificado</a></p>
            
             </div>
           </div>
