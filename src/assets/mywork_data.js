@@ -1,5 +1,5 @@
-import project1_img from '../assets/project_1.jpg'
-import project2_img from '../assets/project_2.jpg'
+import project1_img from '../assets/we-peoples.png'
+import project2_img from '../assets/Projeto-Pizzaria.png'
 import project3_img from '../assets/project_3.jpg'
 import project4_img from '../assets/project_4.jpg'
 import project5_img from '../assets/project_5.jpg'
@@ -9,12 +9,14 @@ const mywork_data = [
     {
         w_no:1,
         w_name:"Web design",
-        w_img:project1_img
+        w_img:project1_img,
+        link: "https://aldairrochaofc.github.io/LandingPage-Technology/"
     },
     {
         w_no:2,
         w_name:"Web design",
-        w_img:project2_img
+        w_img:project2_img,
+        link: "https://aldairrochaofc.github.io/LandingPage-Technology/"
     },
     {
         w_no:3,

@@ -19,11 +19,9 @@
   box-sizing: border-box;
   transition: border 0.3s ease;
 }
-
 .img-icon-work:hover {
   border: 3px solid rgb(12, 195, 165);
 }
-
 .mywork-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -35,25 +33,9 @@
 }
 .mywork-container img {
   width: 70%;
+  height: 25vh;
   cursor: pointer;
   border-radius: 10px;
-}
-.mywork-showmore {
-  display: flex;
-  border-radius: 40px;
-  border: 2px solid white;
-  padding: 10px 40px;
-  font-size: 20px;
-  font-weight: 500;
-  margin-bottom: 40px;
-  cursor: pointer;
-  width: 200px;
-  justify-content: space-between;
-  box-sizing: border-box;
-}
-.mywork-showmore:hover{
-  border: 1px solid #36bdbf;
-  transition: all ease 1s;
 }
 .arrow-icon {
   width: 15%;
@@ -76,10 +58,10 @@
     grid-template-columns: 1fr 1fr;
     height: 65vh;
     gap: 30px;
-    margin-right: 15%;
+    margin-right: 10%;
   }
   .mywork-container img {
-    width: 115%;
+    width: 100%;
     height: 100%;
   }
   .mywork-showmore {

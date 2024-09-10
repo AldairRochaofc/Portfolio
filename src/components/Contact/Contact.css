@@ -147,6 +147,32 @@
 .modal-content button:hover {
   background-color: #0056b3;
 }
+.contact-submit {
+  border: none;
+  color: white;
+  border-radius: 50px;
+  background: linear-gradient(267deg, #58b0bc 0.36%, #014958 102.06%);
+  font-size: 16px;
+  padding: 10px 40px;
+  margin-bottom: 40px;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader {
+  border: 4px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 4px solid #3498db;
+  width: 16px;
+  height: 16px;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 @media (max-width: 768px) {
   .contact {
     gap: 20px;

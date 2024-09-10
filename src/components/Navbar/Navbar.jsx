@@ -5,19 +5,15 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import menu_open from '../../assets/menu_open.svg'
 import menu_close from '../../assets/menu_close.svg'
 
-
 function Navbar() {
   const [menu, setMenu] = useState("portfolio");
   const menuRef = useRef(null);
-
   const openMenu = () => {
     menuRef.current.style.right = "0";
   };
-
   const closeMenu = () => {
     menuRef.current.style.right = "-350px";
   };
-
   return (
     <div id='navbar' className='navbar'>
       <img className='logo' src={logo} alt="" />

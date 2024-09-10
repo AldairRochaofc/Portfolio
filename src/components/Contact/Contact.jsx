@@ -6,16 +6,18 @@ import call_icon from '../../assets/call.svg';
 
 export const Contact = () => {
     const [showModal, setShowModal] = useState(false);
+    const [isLoading, setIsLoading] = useState(false); // Estado para o carregamento
 
     const onSubmit = async (event) => {
         event.preventDefault();
+        setIsLoading(true); // Ativa o carregamento
+
         const formData = new FormData(event.target);
-    
         formData.append("access_key", "3b2fae2d-9c52-4268-821e-44f1cdd8c8d4");
-    
+
         const object = Object.fromEntries(formData);
         const json = JSON.stringify(object);
-    
+
         const res = await fetch("https://api.web3forms.com/submit", {
             method: "POST",
             headers: {
@@ -24,11 +26,12 @@ export const Contact = () => {
             },
             body: json,
         }).then((res) => res.json());
-    
+
         if (res.success) {
-            setShowModal(true); // Exibe o modal
-            event.target.reset(); // Limpa os campos do formulário
+            setShowModal(true);
+            event.target.reset(); 
         }
+        setIsLoading(false); 
     };
 
     return (
@@ -55,16 +58,17 @@ export const Contact = () => {
                 </div>
                 <form onSubmit={onSubmit} className="contact-right">
                     <label htmlFor="">Seu Nome</label>
-                    <input type="text" placeholder='Digite seu nome' name="Nome"required />
+                    <input type="text" placeholder='Digite seu nome' name="Nome" required />
                     <label htmlFor="">Seu E-mail</label>
-                    <input type="email" placeholder='Digite seu E-mail' name="Email"required />
+                    <input type="email" placeholder='Digite seu E-mail' name="Email" required />
                     <label htmlFor="Write your message here"></label>
                     <textarea name="messege" rows="8" placeholder='Digite sua Mensagem' required></textarea>
-                    <button type='submit' className="contact-submit">Enviar</button>
+                    <button type='submit' className="contact-submit" disabled={isLoading}>
+                        {isLoading ? <div className="loader"></div> : 'Enviar'}
+                    </button>
                 </form>
             </div>
 
-            {/* Modal */}
             {showModal && (
                 <div className="modal">
                     <div className="modal-content">

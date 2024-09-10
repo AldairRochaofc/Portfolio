@@ -100,6 +100,13 @@
   width: 30px;
   margin-left: 15%;
 }
+.link-profile{
+  text-decoration: none;
+  color: white;
+}
+.link-profile:hover{
+  text-decoration: underline;
+}
 @media (max-width: 768px) {
   .hero img {
     margin-bottom: 12px;
@@ -124,7 +131,7 @@
   }
   .hero-resume {
     overflow-y: hidden;
-    width: 50px;
+    width: 102px;
     height: 20px;
   }
   .hero-resume img {
